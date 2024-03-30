@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import {
   Progress,
@@ -147,7 +147,7 @@ function App() {
       </Modal>
       <Toaster />
       <Header>
-        <Title>2024 3모 영어 단어 암기</Title>
+        <Title>{idk ? "Stupid" : "3월 모의고사 영단어 암기 대작전"}</Title>
         <ProgressBar>
           <Progress
             size="sm"
@@ -155,7 +155,9 @@ function App() {
             value={((currentWordIdx + 1) / wordOrder.length) * 100}
           />
           <ProgressText>
-            {currentWordIdx === wordOrder.length
+            {idk
+              ? "Stupid"
+              : currentWordIdx === wordOrder.length
               ? "Finished!"
               : currentWordIdx + 1 + "/" + wordOrder.length}
           </ProgressText>
@@ -185,7 +187,7 @@ function App() {
                   setIdk(true);
                 }}
               >
-                {idk ? "You Stupid" : "IDK"}
+                {idk ? "Stupid" : "IDK"}
               </Button>
               <Button
                 color="primary"
@@ -193,14 +195,14 @@ function App() {
                   checkAnswer();
                 }}
               >
-                Submit
+                {idk ? "Stupid" : "Submit"}
               </Button>
               <Button
                 onPress={() => {
                   onOpen();
                 }}
               >
-                Word List
+                {idk ? "Stupid" : "Word List"}
               </Button>
             </Buttons>
           </>
