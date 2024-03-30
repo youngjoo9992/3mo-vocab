@@ -43,7 +43,7 @@ function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [wordOrder, setWordOrder] = useState(shuffle(words));
-  const [currentWordIdx, setCurrentWordIdx] = useState(102);
+  const [currentWordIdx, setCurrentWordIdx] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(
     currentWordIdx === wordOrder.length
       ? []
