@@ -147,7 +147,7 @@ function App() {
       </Modal>
       <Toaster />
       <Header>
-        <Title>{idk ? "Stupid" : "3월 모의고사 영단어 암기 대작전"}</Title>
+        <Title>{idk ? "Stupid" : "3모 단어 암기 대작전"}</Title>
         <ProgressBar>
           <Progress
             size="sm"
