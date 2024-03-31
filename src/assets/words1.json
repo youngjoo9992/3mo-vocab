@@ -134,7 +134,7 @@
   { "english_word": "inferior", "korean_definition": ["열등한"] },
   {
     "english_word": "commit",
-    "korean_definition": ["(죄를) 저지르다", "약속하다"]
+    "korean_definition": ["저지르다", "약속하다"]
   },
   { "english_word": "pursuit", "korean_definition": ["추구"] },
   { "english_word": "analytical", "korean_definition": ["분석적인"] },
@@ -179,7 +179,7 @@
   { "english_word": "insure", "korean_definition": ["보험에 가입하다"] },
   {
     "english_word": "enthusiast",
-    "korean_definition": ["열렬한 팬(지지자)"]
+    "korean_definition": ["열렬한 팬"]
   },
   { "english_word": "connotation", "korean_definition": ["함축"] },
   {
