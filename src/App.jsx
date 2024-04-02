@@ -114,6 +114,11 @@ function App() {
     setWordOrder(shuffle(words));
   };
 
+  const skip = () => {
+    setCurrentWordIdx(currentWordIdx + 1);
+    setIdk(false);
+  }
+  
   return (
     <Container>
       <Modal
@@ -203,6 +208,13 @@ function App() {
                 }}
               >
                 {idk ? "Stupid" : "Word List"}
+              </Button>
+              <Button
+                onPress={() => {
+                  skip();
+                }}
+              >
+                {idk ? "Stupid" : "Skip"}
               </Button>
             </Buttons>
           </>
